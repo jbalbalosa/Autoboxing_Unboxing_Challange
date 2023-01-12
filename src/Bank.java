@@ -34,7 +34,7 @@ public class Bank {
     }
 
     public Branch findBranch (String branchName){
-        for (int i=0; i<=this.branches.size(); i++){
+        for (int i=0; i<this.branches.size(); i++){
             Branch checkedBranch = this.branches.get(i);
             if (checkedBranch.getName().equals(branchName)) {
                 return checkedBranch;
@@ -49,9 +49,9 @@ public class Bank {
             System.out.println("Customers details for branch " + branch.getName());
 
             ArrayList<Customer> branchCustomers = branch.getCustomers();
-            for(int i =0; i< branchCustomers.size(); i++){
+            for(int i =0; i<branchCustomers.size(); i++){
                 Customer branchCustomer = branchCustomers.get(i);
-                System.out.println("Customer: " + branchCustomer.getName() + "[" + i + "]");
+                System.out.println("Customer: " + branchCustomer.getName() + "[" + (i+1) + "]");
 
                 //show customer transactions
                 if(showTransactions){

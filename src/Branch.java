@@ -45,11 +45,4 @@ public class Branch {
         return null;
     }
 
-/*    public void printCustomers(){
-        System.out.println("Customer List");
-        for(int i = 0; i<this.customers.size(); i++){
-            System.out.println((i+1) + "." + this.customers.get(i).getName() +
-                                             this.customers.get(i).getTransaction());
-        }
-    }*/
 }
